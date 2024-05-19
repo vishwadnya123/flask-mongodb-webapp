@@ -1,5 +1,5 @@
 # Flask-Based Web Application with MongoDB Integration
-
+url output:http://127.0.0.1:5000
 ## Project Description
 This project is a web application built with Flask that allows users to add, retrieve, and analyze data. It integrates MongoDB for data storage, and uses NumPy and Pandas for data analysis.
 
@@ -77,7 +77,7 @@ json
 
 Testing the API
 Use tools like curl or Postman to interact with the API.
-url output:http://127.0.0.1:5000
+
 
 **Add Data**
 curl -X POST http://127.0.0.1:5000/data -H "Content-Type: application/json" -d '{"name": "Sample", "value": 123.45}'
