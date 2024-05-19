@@ -77,6 +77,7 @@ json
 
 Testing the API
 Use tools like curl or Postman to interact with the API.
+url output:http://127.0.0.1:5000
 
 **Add Data**
 curl -X POST http://127.0.0.1:5000/data -H "Content-Type: application/json" -d '{"name": "Sample", "value": 123.45}'
