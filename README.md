@@ -15,3 +15,74 @@ This project is a web application built with Flask that allows users to add, ret
    ```bash
    git clone https://github.com/vishwadnya123/flask-mongodb-webapp.git
    cd flask-mongodb-webapp
+
+2 Create and activate a virtual environment (optional but recommended):
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3 Install the dependencies:
+   pip install -r requirements.txt
+
+4 Set up the database:
+   setup.py
+
+5 Run the application:
+   python app.py
+
+**Add Data**
+URL: /data
+Method: POST
+Request Body:
+json
+Copy code
+{
+  "name": "Sample",
+  "value": 123.45
+}
+
+**Get Data**
+URL: /data
+Method: GET
+Response:
+json
+
+[
+  {
+    "name": "Sample",
+    "value": 123.45
+  }
+]
+
+**Analyze Data**
+URL: /analysis
+Method: GET
+Response:
+json
+{
+  "mean": 123.45,
+  "median": 123.45,
+  "summary": {
+    "value": {
+      "count": 1.0,
+      "mean": 123.45,
+      "std": null,
+      "min": 123.45,
+      "25%": 123.45,
+      "50%": 123.45,
+      "75%": 123.45,
+      "max": 123.45
+    }
+  }
+}
+
+Testing the API
+Use tools like curl or Postman to interact with the API.
+
+**Add Data**
+curl -X POST http://127.0.0.1:5000/data -H "Content-Type: application/json" -d '{"name": "Sample", "value": 123.45}'
+**Get Data**
+curl http://127.0.0.1:5000/data
+**Analyze Data**
+curl http://127.0.0.1:5000/analysis
+
+
