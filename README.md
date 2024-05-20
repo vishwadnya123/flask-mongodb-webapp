@@ -40,6 +40,8 @@ Copy code
   "value": 123.45
 }
 
+
+
 **Get Data**
 URL: /data
 Method: GET
