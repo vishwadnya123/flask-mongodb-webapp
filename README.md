@@ -79,6 +79,7 @@ json
     }
   }
 }
+![image](https://github.com/vishwadnya123/flask-mongodb-webapp/assets/148346742/ca490d47-ee07-40c1-b285-c4343246e256)
 
 Testing the API
 Use tools like curl or Postman to interact with the API.
