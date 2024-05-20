@@ -2,6 +2,7 @@
 url output:http://127.0.0.1:5000
 ## Project Description
 This project is a web application built with Flask that allows users to add, retrieve, and analyze data. It integrates MongoDB for data storage, and uses NumPy and Pandas for data analysis.
+![main](https://github.com/vishwadnya123/flask-mongodb-webapp/assets/148346742/384062b9-c4ac-48d3-9bcc-ba10fc614ccc)
 
 ## Setup Instructions
 
@@ -30,6 +31,8 @@ This project is a web application built with Flask that allows users to add, ret
    python app.py
 
 **Add Data**
+![data](https://github.com/vishwadnya123/flask-mongodb-webapp/assets/148346742/cf6b6890-7e3a-4dcd-a8a5-7e65d5ae4721)
+
 URL: /data
 Method: POST
 Request Body:
